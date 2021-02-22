@@ -1,4 +1,5 @@
 /* Copyright 2013-2019 Homegear GmbH
+ * Copyright 2021 Andreas Boehler
  *
  * Homegear is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
