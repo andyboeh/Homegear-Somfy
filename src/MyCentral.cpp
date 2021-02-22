@@ -629,6 +629,7 @@ std::shared_ptr<MyPeer> MyCentral::createPeer(uint32_t deviceType, int32_t addre
 	try
 	{
 		std::shared_ptr<MyPeer> peer(new MyPeer(_deviceId, this));
+		peer->setDeviceType(deviceType);
 		peer->setAddress(address);
 		peer->setRollingCode(0);
 		peer->setEncryptionKey(0xA0);
