@@ -30,7 +30,7 @@
 
 #include "Interfaces.h"
 #include "GD.h"
-//#include "PhysicalInterfaces/Cul.h"
+#include "PhysicalInterfaces/Cul.h"
 //#include "PhysicalInterfaces/Coc.h"
 #include "PhysicalInterfaces/Cunx.h"
 //#include "PhysicalInterfaces/TiCc1100.h"
@@ -60,6 +60,7 @@ void Interfaces::create()
 			else if(i->second->type == "coc") device.reset(new Coc(i->second));
 			else */
 			if(i->second->type == "cunx") device.reset(new Cunx(i->second));
+			else if(i->second->type == "cul") device.reset(new Cul(i->second));
 /*#ifdef SPISUPPORT
 			else if(i->second->type == "cc1100") device.reset(new TiCc1100(i->second));
 #endif*/
