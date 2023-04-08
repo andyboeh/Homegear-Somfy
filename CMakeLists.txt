@@ -6,6 +6,8 @@ set(CMAKE_CXX_STANDARD 11)
 set(SOURCE_FILES
         src/PhysicalInterfaces/Cunx.cpp
         src/PhysicalInterfaces/Cunx.h
+        src/PhysicalInterfaces/Cul.cpp
+        src/PhysicalInterfaces/Cul.h
         src/PhysicalInterfaces/ISomfyInterface.cpp
         src/PhysicalInterfaces/ISomfyInterface.h
         src/Factory.cpp
